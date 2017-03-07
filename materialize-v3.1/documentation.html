@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--================================================================================
+    Item Name: Materialize - Material Design Admin Template
+    Version: 3.1
+    Author: GeeksLabs
+    Author URL: http://www.themeforest.net/user/geekslabs
+================================================================================ -->
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
+  <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
+  <title>Documentation | Materialize - Material Design Admin Template</title>
+
+  <!-- Favicons-->
+  <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+  <!-- Favicons-->
+  <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+  <!-- For iPhone -->
+  <meta name="msapplication-TileColor" content="#00bcd4">
+  <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+  <!-- For Windows Phone -->
+
+
+  <!-- CORE CSS-->
+
+  <link href="demo/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="demo/css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <style type="text/css">
+    .doc-v {
+      padding-right: 10px;
+    }
+    #thanks {
+      padding-top: 50px;
+    }
+    .thanks-text {
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+    .folder-int {
+      padding-left: 50px;
+      font-size: 0.9rem;
+    }
+  </style>
+
+  <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
+  <link href="demo/js/plugins/prism/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="demo/js/plugins/dynatree/skin-vista/ui.dynatree.css" type="text/css" rel="stylesheet" media="screen,projection">
+  
+  <link href="demo/js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">  
+
+</head>
+
+<body>
+  <!-- Start Page Loading -->
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+  <!-- End Page Loading -->
+
+  <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- START HEADER -->
+  <header id="header" class="page-topbar">
+    <!-- start header nav-->
+    <div class="navbar-fixed">
+      <nav class="">
+        <div class="nav-wrapper">
+          <h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-1"><img src="demo/images/materialize-logo.png" alt="materialize logo"></a> <span class="logo-text">Materialize</span></h1>
+          <span class="right doc-v">Documentation v3.1 </span>
+        </div>
+      </nav>
+    </div>
+    <!-- end header nav-->
+  </header>
+  <!-- END HEADER -->
+
+  <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- START MAIN -->
+  <div id="main">
+    <!-- START WRAPPER -->
+    <div class="wrapper">
+
+      <!-- START LEFT SIDEBAR NAV-->
+      <aside id="left-sidebar-nav">
+        <ul id="slide-out" class="side-nav fixed leftside-navigation">
+          <li class="bold"><a href="#thanks" class="waves-effect waves-cyan">Thanks</a>
+          </li>
+          <li class="bold"><a href="#introduction" class="waves-effect waves-cyan">Introduction</a>
+          </li>
+          <li class="bold"><a href="#started" class="waves-effect waves-cyan">Getting Started</a>
+          </li>          
+          <li class="bold"><a href="#sass" class="waves-effect waves-cyan">Working with SASS</a>
+          </li>
+          <li class="bold"><a href="#grunt" class="waves-effect waves-cyan">Working with GRUNT</a>
+          </li>
+          <li class="bold"><a href="#angular" class="waves-effect waves-cyan">Angular UI</a>
+          </li>          
+          <li class="bold"><a href="#template-structure" class="waves-effect waves-cyan">Template Structure</a>
+          </li>                    
+          <li class="bold"><a href="#colors" class="waves-effect waves-cyan">Colors</a>
+          </li>          
+          <li class="bold"><a href="#helpers" class="waves-effect waves-cyan">Helpers</a>
+          </li>
+          <li class="bold"><a href="#upgrading" class="waves-effect waves-cyan">Upgrading</a>
+          </li>
+          <li class="bold"><a href="#troubleshooting" class="waves-effect waves-cyan">Troubleshooting</a>
+          </li>
+          <li class="bold"><a href="#support" class="waves-effect waves-cyan">Support</a>
+          </li>
+          <li class="bold"><a href="#credits" class="waves-effect waves-cyan">Credits</a>
+          </li>
+        <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only darken-2"><i class="mdi-navigation-menu" ></i></a>
+      </aside>
+      <!-- END LEFT SIDEBAR NAV-->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+      <!-- START CONTENT -->
+      <section id="content">
+
+        <!--start container-->
+        <div class="container">
+          <!-- Thanks -->
+          <div id="thanks" class="seaction scrollspy">
+            <div class="card-panel cyan center-align white-text">
+              <h1 class="thanks-text white-text">Thanks!</h1>
+              <h4 class="header">Welcome To Materialize Admin Theme Documentation</h4>
+              <p class="caption">Thank you for purchasing Materialize Admin Theme. If you have any questions that are beyond the scope of this help file, please feel free to send us support ticket on our support forum <a href="http://support.geekslabs.com/" class="white-text" target="_blank">http://support.geekslabs.com/</a>.</p>
+              <p>Rate it 5 start if you like it, it helps for more and faster updates, thanks so much!</p>
+            </div>
+          </div>
+
+          <!-- Introduction -->
+          <div class="divider"></div>
+          <div id="introduction" class="seaction scrollspy">
+            <h4 class="header">Introduction</h4>
+            <p>Materialize is a Material Design Admin Template is the excellent responsive and multipurpose Admin Theme.</p>
+            <p>Materialize has a huge collection of material design animation & widgets, UI Elements, jQuery plugins and works seamlessly on all major web browsers, tablets and phones. User friendly, intuitive, and fun to use.</p>
+          </div>
+          <div class="divider"></div>
+
+          <!-- Folder Structure -->
+          <div id="started" class="seaction scrollspy">
+
+            <h4 class="header">Getting Started</h4>
+            <p>This part of the doc will help you to quick start your project and will you a basic idea about how materialize admin theme work. For you to get start visit the "Get Started" folder in your download package.</p>
+            <p class="header">What's Included</p>
+            <p>Materialize admin theme comes in two forms, within which you'll find the following directories and files, logically grouping common resources and providing both compiled and minified variations</p>
+            <p>Once you have download the package you will see the following folder structure</p>
+            <div id="folder-structure-tree"></div>
+            <p class="header">Whats Inside getting_started</p>
+            <p>This folder is a boilerplate template to help you start your project from. You will find the following folder structure...</p>
+            <div id="getting-started-folder-structure-tree"></div>
+            <p><strong>css:</strong> Folder contain all the custom, layout, plugins and generated code css from scss.</p>
+            <p>Custom css folder contain blank custom-style.css file, for those who do not know scss and want to make any css change we suggest you to add new css in this file. It will help you to get in sync with new updated without losing your changes.</p>
+            <p>Layouts folder contains provided predefined layout css files like style-fullscreen.css and style-horizontal.css. You can create your own layout too by adding your own new css layout file.</p>
+            <p>Plugins folder contains the css files of used plugins, it can be third party css files. If you want to use any new third party css you can add all of theme in this folder.</p>
+            <p>And the rest materialize.css & style.css are the main files generated from the scss folder. materialize.css files contain the code material design css and style.css contains the admin theme as well as the newly added third party plugins css support.</p>
+            <p><strong>font:</strong> Folder contain the fonts used by this theme. We have used material-design-icons as font icons & roboto as primary fonts. You can also use your own custom fonts by adding those manually in this folder.</p>
+            <p><strong>images:</strong> Folder contain the images used in theme, you can also add new images you want to use for your custom theme.</p>
+            <p><strong>js:</strong> Folder contain the materialize-plugins and  plugins folders. Folder materialize-plugins  generates materialize.js core js file, We suggest you to do not edit the core js files in this folders.</p>
+            <p> Folder plugins contains all the third party js library which are used in this theme, plugin.js file contain the usage code of all those third party js library. You can add any of third party js library in plugins folder and use them for your own custom theme. We suggest you to do not edit plugins.js file. To add your own custom js code you can use custom-script.js file.</p>
+            <p><strong>sass:</strong> Folder contain all the scss files. The components folder contain all the materialize framework core scss files. The materialize.scss file includes all the files from this folders to generate generate materialize.css file inside css/ folder. We suggest you to do not edit any file from this folder.</p>
+            <p>The theme-components folder contain all the theme custom css and third party used plugins css, It will generate style.css file inside css/ folder. We suggest you to do not edit any file from this folder, you may edit _variables.scss files for styling purpose by taking back-up.</p>
+            <p>Folder themes contain 8 predefined themes, you can use any of theme and also you can add new theme by creating new folder.</p>
+            <p>You can change theme by changing the theme path from materialize.scss file</p>
+            <p><code>materialize.scss</code></p>            
+            <pre><code class="language-css" data-language="css">
+            
+@charset "UTF-8";
+
+// Mixins
+@import "components/prefixer";
+@import "components/mixins";
+@import "components/color";
+
+// Theme;
+/*
+  Tip: You can change the theme name here to generate new default style, you can also create your own !
+*/
+@import "themes/default/theme";
+
+// Reset
+@import "components/normalize";
+....
+           </code></pre>
+           <p><strong>index.html:</strong> File is the getting start html file ready to start with fresh new page.</p>
+
+          <p class="header">Whats Inside demo</p>
+          <p>This folder contains all the demo files that we have shown in the live version for reference, you may wish to import code to your project from that. This is only used for reference and we do no recommend to start your project from demo files.</p>
+
+          <p class="header">Whats Inside grunt</p>
+          <p>Materialize admin theme support popular build systems called Grunt.</p>
+          <div id="grunt-structure-tree"></div>
+        </div>
+
+        <!-- Working with SASS -->
+        <div class="divider"></div>
+        <div id="sass" class="seaction scrollspy">
+          <h4 class="header">Working with SASS</h4>
+          <p>SASS is a CSS pre-processor, meaning that it extends the CSS language, adding features that allow variables, mixins, functions. Materialize admin theme supports SASS and is pure built on top of SASS.</p>
+          <p>SASS Files are found under <code>getting_started/sass</code></p>
+          <p>The components folder contain all the materialize framework core scss files. The materialize.scss file includes all the files from this folders to generate generate materialize.css file inside css/ folder.</p>
+          <p>The theme-components folder contain all the theme custom css and third party used plugins css, It will generate style.css file inside css/ folder.</p>
+          <p>The themes folder contain 8 predefined themes, you can use any of theme and also you can add new theme by creating new folder.</p>
+          <p class="header">Variables</p>
+          <p>Variables help to generate themes, you can custom build you very own theme. The variables will be include inside a specific theme </p>
+          <p>e.g: <code>sass/themes/default/_variables.scss</code> by changing the a few 5 main primary & secondary color variables you can create your own theme.</p>
+          <p class="header">Mixins</p>
+          <p>We have made a wide variety of mixins that can be used in sass</p>
+          <p>Mixins can be found under <code>sass/components/_mixins.scss</code></p>
+        
+          <p class="header">Compiling</p>
+          <p>Using Grunt use the following commands on your terminal</p>
+          <p>This command will automatically compile the scss to css on file and save it.</p>
+          <pre><code class="language-javascript" data-language="javascript">
+$ grunt watch
+          </code></pre>
+          <p>This command will compile the scss to css on main project location.</p>
+          <pre><code class="language-javascript" data-language="javascript">
+$ grunt sass:main
+          </code></pre>
+          <p>To compile and save it in dist, it will minified also your css file.</p>
+          <pre><code class="language-javascript" data-language="javascript">
+$ grunt sass:dist
+          </code></pre>
+        </div>
+
+        <!-- Working with Grunt -->
+        <div class="divider"></div>
+        <div id="grunt" class="seaction scrollspy">
+          <h4 class="header">Working with Grunt</h4>
+          <p>In one word: automation. The less work you have to do when performing repetitive tasks like minification, compilation, unit testing, linting, etc, the easier your job becomes. After you've configured it through a Gruntfile. Material admin theme supports Grunt to make it even easier for developers, this allows us to implement a powerful command line interface for pages. Here are some of the things that we have added using grunt</p>
+
+          <p class="header">Installing Grunt</p>
+          <p>To install grunt first you must have <a href="http://nodejs.org/download/">NodeJs installed</a>, NodeJS will have npm (node packaged modules)<br> Run the following commands</p>
+          <ul>
+            <li>Install <code>grunt-cli</code> globally by running the following command <code>npm install -g grunt-cli</code></li>
+            <li>In you downloaded package from themeforest, navigate to <code>grunt/</code> directory and copy both <code>package.json</code> <code>gruntfile.js</code> to your project root. e.g : <code>getting_started</code> folder</li>
+            <li>Navigate to the root directory of your project, then run <code>npm install</code>. </li>
+          </ul>
+          <p>Once you have successfully setup now you can use pages Grunt CLI commands to automate your task</p>
+          <p class="header">Commands</p>
+          <p><strong>Grunt Build</strong>: This will automatically minify your assets resources like css and js into a folder called dist, this is the ready to go folder for your project release.</p>
+          <p><strong>Grunt Watch</strong>: This will automatically detect any file change and compile it on runt time, you just need to refresh the page to check the change effects.</p>
+          <p class="header">Troubleshooting</p>
+          <p>Should you encounter problems with installing dependencies or running Grunt commands, first delete the /node_modules/ directory generated by npm. Then, rerun npm install.</p>
+        </div>
+
+        <!-- Angular UI -->
+        <div class="divider"></div>
+        <div id="angular" class="seaction scrollspy">
+          <h4 class="header">Angular UI</h4>
+          <p>Ready to use number of Angular directives, which makes sure that the components in materialize.js, which are mainly initialized on document ready, are handled by Angular in the right way.</p>
+          <p>To support materialize admin template Angular directives you need to include <code>js/plugins/angular-materialize.js</code> file in your page.</p> 
+          <p>For detailed information of using those directives please refer angular-ui.html.</p>
+        </div>
+
+        <!-- Template Structure -->
+        <div class="divider"></div>
+        <div id="template-structure" class="seaction scrollspy">
+            <h4 class="header">Template Stracture</h4>            
+            <p>After unzip the Theme files you can see materialize/blank.html folder. That file contain the following common structure.</p>
+            <p>By using blank.html you are free to modify depending on the customization you require. If you would like to add/edit UI elements, Widget, Data Tables or charts.</p>
+            <p class="caption">The Header</p>
+            <pre><code class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;!--================================================================================
+  Item Name: Materialize - Material Design Admin Template
+  Version: 2.2
+  Author: GeeksLabs
+  Author URL: http://www.themeforest.net/user/geekslabs
+================================================================================ --&gt;
+
+&lt;head&gt;
+  &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"&gt;
+  &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+  &lt;meta name="msapplication-tap-highlight" content="no"&gt;
+  &lt;meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. "&gt;
+  &lt;meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,"&gt;
+  &lt;title&gt;Page Blank | Materialize - Material Design Admin Template&lt;/title&gt;
+
+  &lt;!-- Favicons--&gt;
+  &lt;link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32"&gt;
+  &lt;!-- Favicons--&gt;
+  &lt;link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png"&gt;
+  &lt;!-- For iPhone --&gt;
+  &lt;meta name="msapplication-TileColor" content="#00bcd4"&gt;
+  &lt;meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png"&gt;
+  &lt;!-- For Windows Phone --&gt;
+
+
+  &lt;!-- CORE CSS--&gt;
+  
+  &lt;link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"&gt;
+  &lt;link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"&gt;
+
+
+  &lt;!-- INCLUDED PLUGIN CSS ON THIS PAGE --&gt;
+  &lt;link href="css/prism.css" type="text/css" rel="stylesheet" media="screen,projection"&gt;
+  &lt;link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection"&gt;
+  &lt;link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection"&gt;
+&lt;/head&gt;
+            </code></pre>
+<div class="divider"></div>
+            <p class="caption">The Body</p>
+            <pre><code class="language-markup">
+&lt;!-- START MAIN --&gt;
+  &lt;div id="main"&gt;
+    &lt;!-- START WRAPPER --&gt;
+    &lt;div class="wrapper"&gt;
+
+      &lt;!-- START LEFT SIDEBAR NAV--&gt;
+      &lt;aside id="left-sidebar-nav"&gt;
+          &lt;ul id="slide-out" class="side-nav fixed leftside-navigation"&gt;
+              &lt;li class="user-details cyan darken-2"&gt;
+                  &lt;div class="row"&gt;
+                      &lt;div class="col col s4 m4 l4"&gt;
+                          &lt;img src="images/avatar1.jpg" alt="" class="circle responsive-img valign profile-image"&gt;
+                      &lt;/div&gt;
+                      &lt;div class="col col s8 m8 l8"&gt;
+                          &lt;ul id="profile-dropdown" class="dropdown-content"&gt;
+                              &lt;li&gt;&lt;a href="#"&gt;&lt;i class="mdi-action-face-unlock"&gt;&lt;/i&gt; Profile&lt;/a&gt;
+                              &lt;/li&gt;
+                              &lt;li&gt;&lt;a href="#"&gt;&lt;i class="mdi-action-settings"&gt;&lt;/i&gt; Settings&lt;/a&gt;
+                              &lt;/li&gt;
+                              &lt;li&gt;&lt;a href="#"&gt;&lt;i class="mdi-communication-live-help"&gt;&lt;/i&gt; Help&lt;/a&gt;
+                              &lt;/li&gt;
+                              &lt;li class="divider"&gt;&lt;/li&gt;
+                              &lt;li&gt;&lt;a href="#"&gt;&lt;i class="mdi-action-lock-outline"&gt;&lt;/i&gt; Lock&lt;/a&gt;
+                              &lt;/li&gt;
+                              &lt;li&gt;&lt;a href="#"&gt;&lt;i class="mdi-hardware-keyboard-tab"&gt;&lt;/i&gt; Logout&lt;/a&gt;
+                              &lt;/li&gt;
+                          &lt;/ul&gt;
+                          &lt;a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown"&gt;John Doe&lt;i class="mdi-navigation-arrow-drop-down right"&gt;&lt;/i&gt;&lt;/a&gt;
+                          &lt;p class="user-roal"&gt;Administrator&lt;/p&gt;
+                      &lt;/div&gt;
+                  &lt;/div&gt;
+              &lt;/li&gt;
+              &lt;li class="bold"&gt;&lt;a href="index.html" class="waves-effect waves-cyan"&gt;&lt;i class="mdi-action-dashboard"&gt;&lt;/i&gt; Dashboard&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class="bold"&gt;&lt;a href="app-email.html" class="waves-effect waves-cyan"&gt;&lt;i class="mdi-communication-email"&gt;&lt;/i&gt; Mailbox &lt;span class="new badge"&gt;4&lt;/span&gt;&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class="bold"&gt;&lt;a href="app-calendar.html" class="waves-effect waves-cyan"&gt;&lt;i class="mdi-editor-insert-invitation"&gt;&lt;/i&gt; Calender&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class="no-padding"&gt;
+                  &lt;ul class="collapsible collapsible-accordion"&gt;
+                      &lt;li class="bold"&gt;&lt;a class="collapsible-header waves-effect waves-cyan"&gt;&lt;i class="mdi-action-invert-colors"&gt;&lt;/i&gt; CSS&lt;/a&gt;
+                          &lt;div class="collapsible-body"&gt;
+                              &lt;ul&gt;
+                                  &lt;li&gt;&lt;a href="css-typography.html"&gt;Typography&lt;/a&gt;
+                                  &lt;/li&gt;                                        
+                                  &lt;li&gt;&lt;a href="css-icons.html"&gt;Icons&lt;/a&gt;
+                                  &lt;/li&gt;
+                                  &lt;li&gt;&lt;a href="css-shadow.html"&gt;Shadow&lt;/a&gt;
+                                  &lt;/li&gt;
+                                  &lt;li&gt;&lt;a href="css-media.html"&gt;Media&lt;/a&gt;
+                                  &lt;/li&gt;
+                                  &lt;li&gt;&lt;a href="css-sass.html"&gt;Sass&lt;/a&gt;
+                                  &lt;/li&gt;
+                              &lt;/ul&gt;
+                          &lt;/div&gt;
+                      &lt;/li&gt;
+                      &lt;li class="bold"&gt;&lt;a class="collapsible-header  waves-effect waves-cyan"&gt;&lt;i class="mdi-image-palette"&gt;&lt;/i&gt; UI Elements&lt;/a&gt;
+                          &lt;div class="collapsible-body"&gt;
+                              &lt;ul&gt;
+                                  &lt;li&gt;&lt;a href="ui-buttons.html"&gt;Buttons&lt;/a&gt;
+                                  &lt;/li&gt;
+                                  &lt;li&gt;&lt;a href="ui-badges.html"&gt;Badges&lt;/a&gt;
+                                  &lt;/li&gt;
+                                  &lt;li&gt;&lt;a href="ui-cards.html"&gt;Cards&lt;/a&gt;
+                                  &lt;/li&gt;
+                                  &lt;li&gt;&lt;a href="ui-collections.html"&gt;Collections&lt;/a&gt;
+                                  &lt;/li&gt;
+                                  &lt;li&gt;&lt;a href="ui-accordions.html"&gt;Accordian&lt;/a&gt;
+                                  &lt;/li&gt;                                        
+                                  &lt;li&gt;&lt;a href="ui-navbar.html"&gt;Navbar&lt;/a&gt;
+                                  &lt;/li&gt;
+                                  &lt;li&gt;&lt;a href="ui-pagination.html"&gt;Pagination&lt;/a&gt;
+                                  &lt;/li&gt;
+                                  &lt;li&gt;&lt;a href="ui-preloader.html"&gt;Preloader&lt;/a&gt;
+                                  &lt;/li&gt;
+                                  &lt;li&gt;&lt;a href="ui-modals.html"&gt;Modals&lt;/a&gt;
+                                  &lt;/li&gt;
+                                  &lt;li&gt;&lt;a href="ui-media.html"&gt;Media&lt;/a&gt;
+                                  &lt;/li&gt;
+                                  &lt;li&gt;&lt;a href="ui-toasts.html"&gt;Toasts&lt;/a&gt;
+                                  &lt;/li&gt;
+                                  &lt;li&gt;&lt;a href="ui-tooltip.html"&gt;Tooltip&lt;/a&gt;
+                                  &lt;/li&gt;
+                              &lt;/ul&gt;
+                          &lt;/div&gt;
+                      &lt;/li&gt;
+                      &lt;li class="bold"&gt;&lt;a href="app-widget.html" class="waves-effect waves-cyan"&gt;&lt;i class="mdi-device-now-widgets"&gt;&lt;/i&gt; Widgets &lt;span class="new badge"&gt;&lt;/span&gt;&lt;/a&gt;
+                      &lt;/li&gt;
+                      &lt;li class="bold"&gt;&lt;a class="collapsible-header  waves-effect waves-cyan"&gt;&lt;i class="mdi-editor-border-all"&gt;&lt;/i&gt; Tables&lt;/a&gt;
+                          &lt;div class="collapsible-body"&gt;
+                              &lt;ul&gt;
+                                  &lt;li&gt;&lt;a href="table-basic.html"&gt;Basic Tables&lt;/a&gt;
+                                  &lt;/li&gt;
+                                  &lt;li&gt;&lt;a href="table-data.html"&gt;Data Tables&lt;/a&gt;
+                                  &lt;/li&gt;
+                              &lt;/ul&gt;
+                          &lt;/div&gt;
+                      &lt;/li&gt;
+                      &lt;li class="bold"&gt;&lt;a class="collapsible-header  waves-effect waves-cyan"&gt;&lt;i class="mdi-editor-insert-comment"&gt;&lt;/i&gt; Forms&lt;/a&gt;
+                          &lt;div class="collapsible-body"&gt;
+                              &lt;ul&gt;
+                                  &lt;li&gt;&lt;a href="form-elements.html"&gt;Form Elements&lt;/a&gt;
+                                  &lt;/li&gt;
+                                  &lt;li&gt;&lt;a href="form-layouts.html"&gt;Form Layouts&lt;/a&gt;
+                                  &lt;/li&gt;
+                              &lt;/ul&gt;
+                          &lt;/div&gt;
+                      &lt;/li&gt;
+                      &lt;li class="bold"&gt;&lt;a class="collapsible-header  waves-effect waves-cyan"&gt;&lt;i class="mdi-social-pages"&gt;&lt;/i&gt; Pages&lt;/a&gt;
+                          &lt;div class="collapsible-body"&gt;
+                              &lt;ul&gt;                                        
+                                  &lt;li&gt;&lt;a href="page-login.html"&gt;Login&lt;/a&gt;
+                                  &lt;/li&gt;
+                                  &lt;li&gt;&lt;a href="page-register.html"&gt;Register&lt;/a&gt;
+                                  &lt;/li&gt;
+                                  &lt;li&gt;&lt;a href="page-lock-screen.html"&gt;Lock Screen&lt;/a&gt;
+                                  &lt;/li&gt;
+                                  &lt;li&gt;&lt;a href="page-invoice.html"&gt;Invoice&lt;/a&gt;
+                                  &lt;/li&gt;
+                                  &lt;li&gt;&lt;a href="page-404.html"&gt;404&lt;/a&gt;
+                                  &lt;/li&gt;
+                                  &lt;li&gt;&lt;a href="page-500.html"&gt;500&lt;/a&gt;
+                                  &lt;/li&gt;
+                                  &lt;li&gt;&lt;a href="page-blank.html"&gt;Blank&lt;/a&gt;
+                                  &lt;/li&gt;
+                              &lt;/ul&gt;
+                          &lt;/div&gt;
+                      &lt;/li&gt;
+                      &lt;li class="bold"&gt;&lt;a class="collapsible-header waves-effect waves-cyan"&gt;&lt;i class="mdi-editor-insert-chart"&gt;&lt;/i&gt; Charts&lt;/a&gt;
+                          &lt;div class="collapsible-body"&gt;
+                              &lt;ul&gt;
+                                  &lt;li&gt;&lt;a href="charts-chartjs.html"&gt;Chart JS&lt;/a&gt;
+                                  &lt;/li&gt;
+                                  &lt;li&gt;&lt;a href="charts-chartist.html"&gt;Chartist&lt;/a&gt;
+                                  &lt;/li&gt;
+                                  &lt;li&gt;&lt;a href="charts-morris.html"&gt;Morris Charts&lt;/a&gt;
+                                  &lt;/li&gt;
+                                  &lt;li&gt;&lt;a href="charts-xcharts.html"&gt;xCharts&lt;/a&gt;
+                                  &lt;/li&gt;
+                                  &lt;li&gt;&lt;a href="charts-flotcharts.html"&gt;Flot Charts&lt;/a&gt;
+                                  &lt;/li&gt;
+                                  &lt;li&gt;&lt;a href="charts-sparklines.html"&gt;Sparkline Charts&lt;/a&gt;
+                                  &lt;/li&gt;
+                              &lt;/ul&gt;
+                          &lt;/div&gt;
+                      &lt;/li&gt;
+                  &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li class="li-hover"&gt;&lt;div class="divider"&gt;&lt;/div&gt;&lt;/li&gt;
+              &lt;li class="li-hover"&gt;&lt;p class="ultra-small margin more-text"&gt;MORE&lt;/p&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="css-grid.html"&gt;&lt;i class="mdi-image-grid-on"&gt;&lt;/i&gt; Grid&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li&gt;&lt;a href="css-color.html"&gt;&lt;i class="mdi-editor-format-color-fill"&gt;&lt;/i&gt; Color&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li&gt;&lt;a href="css-helpers.html"&gt;&lt;i class="mdi-communication-live-help"&gt;&lt;/i&gt; Helpers&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li&gt;&lt;a href="changelogs.html"&gt;&lt;i class="mdi-action-swap-vert-circle"&gt;&lt;/i&gt; Changelogs&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li&gt;&lt;a href="css-helpers.html"&gt;&lt;i class="mdi-maps-rate-review"&gt;&lt;/i&gt; Documentation&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class="li-hover"&gt;&lt;div class="divider"&gt;&lt;/div&gt;&lt;/li&gt;
+              &lt;li class="li-hover"&gt;&lt;p class="ultra-small margin more-text"&gt;Daily Sales&lt;/p&gt;&lt;/li&gt;
+              &lt;li class="li-hover"&gt;
+                  &lt;div class="row"&gt;
+                      &lt;div class="col s12 m12 l12"&gt;
+                          &lt;div class="sample-chart-wrapper"&gt;                            
+                              &lt;div class="ct-chart ct-golden-section" id="ct2-chart"&gt;&lt;/div&gt;
+                          &lt;/div&gt;
+                      &lt;/div&gt;
+                  &lt;/div&gt;
+              &lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only darken-2"&gt;&lt;i class="mdi-navigation-menu" &gt;&lt;/i&gt;&lt;/a&gt;
+      &lt;/aside&gt;
+      &lt;!-- END LEFT SIDEBAR NAV--&gt;
+
+      &lt;!-- //////////////////////////////////////////////////////////////////////////// --&gt;
+
+      &lt;!-- START CONTENT --&gt;
+      &lt;section id="content"&gt;
+        
+        &lt;!--breadcrumbs start--&gt;
+        &lt;div id="breadcrumbs-wrapper" class=" grey lighten-3"&gt;
+          &lt;div class="container"&gt;
+            &lt;div class="row"&gt;
+              &lt;div class="col s12 m12 l12"&gt;
+                &lt;h5 class="breadcrumbs-title"&gt;Blank Page&lt;/h5&gt;
+                &lt;ol class="breadcrumb"&gt;
+                    &lt;li&gt;&lt;a href="index.html"&gt;Dashboard&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Pages&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class="active"&gt;Blank Page&lt;/li&gt;
+                &lt;/ol&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!--breadcrumbs end--&gt;
+        
+
+        &lt;!--start container--&gt;
+        &lt;div class="container"&gt;
+          &lt;div class="section"&gt;
+
+            &lt;p class="caption"&gt;A Simple Blank Page to use it for your custome design and elements.&lt;/p&gt;
+            &lt;div class="divider"&gt;&lt;/div&gt;
+            &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!--end container--&gt;
+      &lt;/section&gt;
+      &lt;!-- END CONTENT --&gt;
+
+      &lt;!-- //////////////////////////////////////////////////////////////////////////// --&gt;
+      &lt;!-- START RIGHT SIDEBAR NAV--&gt;
+      &lt;aside id="right-sidebar-nav"&gt;
+        &lt;ul id="chat-out" class="side-nav rightside-navigation"&gt;
+            &lt;li class="li-hover"&gt;
+            &lt;a href="#" data-activates="chat-out" class="chat-close-collapse right"&gt;&lt;i class="mdi-navigation-close"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;div id="right-search" class="row"&gt;
+                &lt;form class="col s12"&gt;
+                    &lt;div class="input-field"&gt;
+                        &lt;i class="mdi-action-search prefix"&gt;&lt;/i&gt;
+                        &lt;input id="icon_prefix" type="text" class="validate"&gt;
+                        &lt;label for="icon_prefix"&gt;Search&lt;/label&gt;
+                    &lt;/div&gt;
+                &lt;/form&gt;
+            &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class="li-hover"&gt;
+                &lt;ul class="chat-collapsible" data-collapsible="expandable"&gt;
+                &lt;li&gt;
+                    &lt;div class="collapsible-header teal white-text active"&gt;&lt;i class="mdi-social-whatshot"&gt;&lt;/i&gt;Recent Activity&lt;/div&gt;
+                    &lt;div class="collapsible-body recent-activity"&gt;
+                        &lt;div class="recent-activity-list chat-out-list row"&gt;
+                            &lt;div class="col s3 recent-activity-list-icon"&gt;&lt;i class="mdi-action-add-shopping-cart"&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col s9 recent-activity-list-text"&gt;
+                                &lt;p&gt;just now&lt;/p&gt;
+                                &lt;p&gt;Jim Doe Purchased new equipments for zonal office.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="recent-activity-list chat-out-list row"&gt;
+                            &lt;div class="col s3 recent-activity-list-icon"&gt;&lt;i class="mdi-device-airplanemode-on"&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col s9 recent-activity-list-text"&gt;
+                                &lt;p&gt;Yesterday&lt;/p&gt;
+                                &lt;p&gt;Your Next flight for USA will be on 15th August 2015.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="recent-activity-list chat-out-list row"&gt;
+                            &lt;div class="col s3 recent-activity-list-icon"&gt;&lt;i class="mdi-action-settings-voice"&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col s9 recent-activity-list-text"&gt;
+                                &lt;p&gt;5 Days Ago&lt;/p&gt;
+                                &lt;p&gt;Natalya Parker Send you a voice mail for next conference.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="recent-activity-list chat-out-list row"&gt;
+                            &lt;div class="col s3 recent-activity-list-icon"&gt;&lt;i class="mdi-action-store"&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col s9 recent-activity-list-text"&gt;
+                                &lt;p&gt;Last Week&lt;/p&gt;
+                                &lt;p&gt;Jessy Jay open a new store at S.G Road.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="recent-activity-list chat-out-list row"&gt;
+                            &lt;div class="col s3 recent-activity-list-icon"&gt;&lt;i class="mdi-action-settings-voice"&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col s9 recent-activity-list-text"&gt;
+                                &lt;p&gt;5 Days Ago&lt;/p&gt;
+                                &lt;p&gt;Natalya Parker Send you a voice mail for next conference.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;div class="collapsible-header light-blue white-text active"&gt;&lt;i class="mdi-editor-attach-money"&gt;&lt;/i&gt;Sales Repoart&lt;/div&gt;
+                    &lt;div class="collapsible-body sales-repoart"&gt;
+                        &lt;div class="sales-repoart-list  chat-out-list row"&gt;
+                            &lt;div class="col s8"&gt;Target Salse&lt;/div&gt;
+                            &lt;div class="col s4"&gt;&lt;span id="sales-line-1"&gt;&lt;/span&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="sales-repoart-list chat-out-list row"&gt;
+                            &lt;div class="col s8"&gt;Payment Due&lt;/div&gt;
+                            &lt;div class="col s4"&gt;&lt;span id="sales-bar-1"&gt;&lt;/span&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="sales-repoart-list chat-out-list row"&gt;
+                            &lt;div class="col s8"&gt;Total Delivery&lt;/div&gt;
+                            &lt;div class="col s4"&gt;&lt;span id="sales-line-2"&gt;&lt;/span&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="sales-repoart-list chat-out-list row"&gt;
+                            &lt;div class="col s8"&gt;Total Progress&lt;/div&gt;
+                            &lt;div class="col s4"&gt;&lt;span id="sales-bar-2"&gt;&lt;/span&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;div class="collapsible-header red white-text"&gt;&lt;i class="mdi-action-stars"&gt;&lt;/i&gt;Favorite Associates&lt;/div&gt;
+                    &lt;div class="collapsible-body favorite-associates"&gt;
+                        &lt;div class="favorite-associate-list chat-out-list row"&gt;
+                            &lt;div class="col s4"&gt;&lt;img src="images/avatar1.jpg" alt="" class="circle responsive-img online-user valign profile-image"&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col s8"&gt;
+                                &lt;p&gt;Eileen Sideways&lt;/p&gt;
+                                &lt;p class="place"&gt;Los Angeles, CA&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="favorite-associate-list chat-out-list row"&gt;
+                            &lt;div class="col s4"&gt;&lt;img src="images/avatar1.jpg" alt="" class="circle responsive-img online-user valign profile-image"&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col s8"&gt;
+                                &lt;p&gt;Zaham Sindil&lt;/p&gt;
+                                &lt;p class="place"&gt;San Francisco, CA&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="favorite-associate-list chat-out-list row"&gt;
+                            &lt;div class="col s4"&gt;&lt;img src="images/avatar1.jpg" alt="" class="circle responsive-img offline-user valign profile-image"&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col s8"&gt;
+                                &lt;p&gt;Renov Leongal&lt;/p&gt;
+                                &lt;p class="place"&gt;Cebu City, Philippines&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="favorite-associate-list chat-out-list row"&gt;
+                            &lt;div class="col s4"&gt;&lt;img src="images/avatar1.jpg" alt="" class="circle responsive-img online-user valign profile-image"&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col s8"&gt;
+                                &lt;p&gt;Weno Carasbong&lt;/p&gt;
+                                &lt;p&gt;Tokyo, Japan&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="favorite-associate-list chat-out-list row"&gt;
+                            &lt;div class="col s4"&gt;&lt;img src="images/avatar1.jpg" alt="" class="circle responsive-img offline-user valign profile-image"&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col s8"&gt;
+                                &lt;p&gt;Nusja Nawancali&lt;/p&gt;
+                                &lt;p class="place"&gt;Bangkok, Thailand&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/aside&gt;
+      &lt;!-- LEFT RIGHT SIDEBAR NAV--&gt;
+
+    &lt;/div&gt;
+    &lt;!-- END WRAPPER --&gt;
+
+  &lt;/div&gt;
+  &lt;!-- END MAIN --&gt;              
+            </code></pre>
+<div class="divider"></div>
+            <p class="caption">The Footer</p>
+            <pre><code class="language-markup">
+ &lt;!-- START FOOTER --&gt;
+  &lt;footer class="page-footer"&gt;
+    &lt;div class="footer-copyright"&gt;
+      &lt;div class="container"&gt;
+        &lt;span&gt;Copyright © 2015 &lt;a class="grey-text text-lighten-4" href="http://themeforest.net/user/geekslabs/portfolio?ref=geekslabs" target="_blank"&gt;GeeksLabs&lt;/a&gt; All rights reserved.&lt;/span&gt;
+        &lt;span class="right"&gt; Design and Developed by &lt;a class="grey-text text-lighten-4" href="http://geekslabs.com/"&gt;GeeksLabs&lt;/a&gt;&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/footer&gt;
+  &lt;!-- END FOOTER --&gt;
+
+
+
+    &lt;!-- ================================================
+    Scripts
+    ================================================ --&gt;
+    
+    &lt;!-- jQuery Library --&gt;
+    &lt;script type="text/javascript" src="js/jquery-1.11.2.min.js"&gt;&lt;/script&gt;    
+    &lt;!--materialize js--&gt;
+    &lt;script type="text/javascript" src="js/materialize.js"&gt;&lt;/script&gt;
+    &lt;!--prism--&gt;
+    &lt;script type="text/javascript" src="js/prism.js"&gt;&lt;/script&gt;
+    &lt;!--scrollbar--&gt;
+    &lt;script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"&gt;&lt;/script&gt;
+    &lt;!-- chartist --&gt;
+    &lt;script type="text/javascript" src="js/plugins/chartist-js/chartist.min.js"&gt;&lt;/script&gt;   
+    
+    &lt;!--plugins.js - Some Specific JS codes for Plugin Settings--&gt;
+    &lt;script type="text/javascript" src="js/plugins.js"&gt;&lt;/script&gt;
+    
+&lt;/body&gt;
+
+&lt;/html&gt;              
+            </code></pre>
+          </div>
+          
+          <!-- Colors -->
+          <div class="divider"></div>
+          <div id="colors" class="seaction scrollspy">
+            <h4 class="header">Materialize Colors </h4>
+            <div id="dynamic-color" class="section">
+                        <div class="row">
+                            <div class="dynamic-color">                                
+                                <div class="col s12 m6 l4">
+                                    <div class="red lighten-5">#ffebee red lighten-5</div>
+                                    <div class="red lighten-4">#ffcdd2 red lighten-4</div>
+                                    <div class="red lighten-3">#ef9a9a red lighten-3</div>
+                                    <div class="red lighten-2">#e57373 red lighten-2</div>
+                                    <div class="red lighten-1">#ef5350 red lighten-1</div>
+                                    <div class="red">#f44336 red</div>
+                                    <div class="red darken-1" style="color: rgba(255, 255, 255, 0.901961);">#e53935 red darken-1</div>
+                                    <div class="red darken-2" style="color: rgba(255, 255, 255, 0.901961);">#d32f2f red darken-2</div>
+                                    <div class="red darken-3" style="color: rgba(255, 255, 255, 0.901961);">#c62828 red darken-3</div>
+                                    <div class="red darken-4" style="color: rgba(255, 255, 255, 0.901961);">#b71c1c red darken-4</div>
+                                    <div class="red accent-1">#ff8a80 red accent-1</div>
+                                    <div class="red accent-2">#ff5252 red accent-2</div>
+                                    <div class="red accent-3">#ff1744 red accent-3</div>
+                                    <div class="red accent-4">#d50000 red accent-4</div>
+                                </div>
+
+                                <div class="col s12 m6 l4">
+                                    <div class="pink lighten-5">#fce4ec pink lighten-5</div>
+                                    <div class="pink lighten-4">#f8bbd0 pink lighten-4</div>
+                                    <div class="pink lighten-3">#f48fb1 pink lighten-3</div>
+                                    <div class="pink lighten-2">#f06292 pink lighten-2</div>
+                                    <div class="pink lighten-1">#ec407a pink lighten-1</div>
+                                    <div class="pink">#e91e63 pink</div>
+                                    <div class="pink darken-1" style="color: rgba(255, 255, 255, 0.901961);">#d81b60 pink darken-1</div>
+                                    <div class="pink darken-2" style="color: rgba(255, 255, 255, 0.901961);">#c2185b pink darken-2</div>
+                                    <div class="pink darken-3" style="color: rgba(255, 255, 255, 0.901961);">#ad1457 pink darken-3</div>
+                                    <div class="pink darken-4" style="color: rgba(255, 255, 255, 0.901961);">#880e4f pink darken-4</div>
+                                    <div class="pink accent-1">#ff80ab pink accent-1</div>
+                                    <div class="pink accent-2">#ff4081 pink accent-2</div>
+                                    <div class="pink accent-3">#f50057 pink accent-3</div>
+                                    <div class="pink accent-4">#c51162 pink accent-4</div>
+                                </div>
+                                <div class="col s12 m6 l4">
+                                    <div class="purple lighten-5">#f3e5f5 purple lighten-5</div>
+                                    <div class="purple lighten-4">#e1bee7 purple lighten-4</div>
+                                    <div class="purple lighten-3">#ce93d8 purple lighten-3</div>
+                                    <div class="purple lighten-2">#ba68c8 purple lighten-2</div>
+                                    <div class="purple lighten-1">#ab47bc purple lighten-1</div>
+                                    <div class="purple">#9c27b0 purple</div>
+                                    <div class="purple darken-1" style="color: rgba(255, 255, 255, 0.901961);">#8e24aa purple darken-1</div>
+                                    <div class="purple darken-2" style="color: rgba(255, 255, 255, 0.901961);">#7b1fa2 purple darken-2</div>
+                                    <div class="purple darken-3" style="color: rgba(255, 255, 255, 0.901961);">#6a1b9a purple darken-3</div>
+                                    <div class="purple darken-4" style="color: rgba(255, 255, 255, 0.901961);">#4a148c purple darken-4</div>
+                                    <div class="purple accent-1">#ea80fc purple accent-1</div>
+                                    <div class="purple accent-2">#e040fb purple accent-2</div>
+                                    <div class="purple accent-3">#d500f9 purple accent-3</div>
+                                    <div class="purple accent-4">#aa00ff purple accent-4</div>
+                                </div>
+                                <div class="col s12 m6 l4">
+                                    <div class="deep-purple lighten-5">#ede7f6 deep-purple lighten-5</div>
+                                    <div class="deep-purple lighten-4">#d1c4e9 deep-purple lighten-4</div>
+                                    <div class="deep-purple lighten-3">#b39ddb deep-purple lighten-3</div>
+                                    <div class="deep-purple lighten-2">#9575cd deep-purple lighten-2</div>
+                                    <div class="deep-purple lighten-1">#7e57c2 deep-purple lighten-1</div>
+                                    <div class="deep-purple">#673ab7 deep-purple</div>
+                                    <div class="deep-purple darken-1" style="color: rgba(255, 255, 255, 0.901961);">#5e35b1 deep-purple darken-1</div>
+                                    <div class="deep-purple darken-2" style="color: rgba(255, 255, 255, 0.901961);">#512da8 deep-purple darken-2</div>
+                                    <div class="deep-purple darken-3" style="color: rgba(255, 255, 255, 0.901961);">#4527a0 deep-purple darken-3</div>
+                                    <div class="deep-purple darken-4" style="color: rgba(255, 255, 255, 0.901961);">#311b92 deep-purple darken-4</div>
+                                    <div class="deep-purple accent-1">#b388ff deep-purple accent-1</div>
+                                    <div class="deep-purple accent-2">#7c4dff deep-purple accent-2</div>
+                                    <div class="deep-purple accent-3">#651fff deep-purple accent-3</div>
+                                    <div class="deep-purple accent-4">#6200ea deep-purple accent-4</div>
+                                </div>
+                                <div class="col s12 m6 l4">
+                                    <div class="indigo lighten-5">#e8eaf6 indigo lighten-5</div>
+                                    <div class="indigo lighten-4">#c5cae9 indigo lighten-4</div>
+                                    <div class="indigo lighten-3">#9fa8da indigo lighten-3</div>
+                                    <div class="indigo lighten-2">#7986cb indigo lighten-2</div>
+                                    <div class="indigo lighten-1">#5c6bc0 indigo lighten-1</div>
+                                    <div class="indigo">#3f51b5 indigo</div>
+                                    <div class="indigo darken-1" style="color: rgba(255, 255, 255, 0.901961);">#3949ab indigo darken-1</div>
+                                    <div class="indigo darken-2" style="color: rgba(255, 255, 255, 0.901961);">#303f9f indigo darken-2</div>
+                                    <div class="indigo darken-3" style="color: rgba(255, 255, 255, 0.901961);">#283593 indigo darken-3</div>
+                                    <div class="indigo darken-4" style="color: rgba(255, 255, 255, 0.901961);">#1a237e indigo darken-4</div>
+                                    <div class="indigo accent-1">#8c9eff indigo accent-1</div>
+                                    <div class="indigo accent-2">#536dfe indigo accent-2</div>
+                                    <div class="indigo accent-3">#3d5afe indigo accent-3</div>
+                                    <div class="indigo accent-4">#304ffe indigo accent-4</div>
+                                </div>
+                                <div class="col s12 m6 l4">
+                                    <div class="blue lighten-5">#e3f2fd blue lighten-5</div>
+                                    <div class="blue lighten-4">#bbdefb blue lighten-4</div>
+                                    <div class="blue lighten-3">#90caf9 blue lighten-3</div>
+                                    <div class="blue lighten-2">#64b5f6 blue lighten-2</div>
+                                    <div class="blue lighten-1">#42a5f5 blue lighten-1</div>
+                                    <div class="blue">#2196f3 blue</div>
+                                    <div class="blue darken-1" style="color: rgba(255, 255, 255, 0.901961);">#1e88e5 blue darken-1</div>
+                                    <div class="blue darken-2" style="color: rgba(255, 255, 255, 0.901961);">#1976d2 blue darken-2</div>
+                                    <div class="blue darken-3" style="color: rgba(255, 255, 255, 0.901961);">#1565c0 blue darken-3</div>
+                                    <div class="blue darken-4" style="color: rgba(255, 255, 255, 0.901961);">#0d47a1 blue darken-4</div>
+                                    <div class="blue accent-1">#82b1ff blue accent-1</div>
+                                    <div class="blue accent-2">#448aff blue accent-2</div>
+                                    <div class="blue accent-3">#2979ff blue accent-3</div>
+                                    <div class="blue accent-4">#2962ff blue accent-4</div>
+                                </div>
+                                <div class="col s12 m6 l4">
+                                    <div class="light-blue lighten-5">#e1f5fe light-blue lighten-5</div>
+                                    <div class="light-blue lighten-4">#b3e5fc light-blue lighten-4</div>
+                                    <div class="light-blue lighten-3">#81d4fa light-blue lighten-3</div>
+                                    <div class="light-blue lighten-2">#4fc3f7 light-blue lighten-2</div>
+                                    <div class="light-blue lighten-1">#29b6f6 light-blue lighten-1</div>
+                                    <div class="light-blue">#03a9f4 light-blue</div>
+                                    <div class="light-blue darken-1" style="color: rgba(255, 255, 255, 0.901961);">#039be5 light-blue darken-1</div>
+                                    <div class="light-blue darken-2" style="color: rgba(255, 255, 255, 0.901961);">#0288d1 light-blue darken-2</div>
+                                    <div class="light-blue darken-3" style="color: rgba(255, 255, 255, 0.901961);">#0277bd light-blue darken-3</div>
+                                    <div class="light-blue darken-4" style="color: rgba(255, 255, 255, 0.901961);">#01579b light-blue darken-4</div>
+                                    <div class="light-blue accent-1">#80d8ff light-blue accent-1</div>
+                                    <div class="light-blue accent-2">#40c4ff light-blue accent-2</div>
+                                    <div class="light-blue accent-3">#00b0ff light-blue accent-3</div>
+                                    <div class="light-blue accent-4">#0091ea light-blue accent-4</div>
+                                </div>
+                                <div class="col s12 m6 l4">
+                                    <div class="cyan lighten-5">#e0f7fa cyan lighten-5</div>
+                                    <div class="cyan lighten-4">#b2ebf2 cyan lighten-4</div>
+                                    <div class="cyan lighten-3">#80deea cyan lighten-3</div>
+                                    <div class="cyan lighten-2">#4dd0e1 cyan lighten-2</div>
+                                    <div class="cyan lighten-1">#26c6da cyan lighten-1</div>
+                                    <div class="cyan">#00bcd4 cyan</div>
+                                    <div class="cyan darken-1" style="color: rgba(255, 255, 255, 0.901961);">#00acc1 cyan darken-1</div>
+                                    <div class="cyan darken-2" style="color: rgba(255, 255, 255, 0.901961);">#0097a7 cyan darken-2</div>
+                                    <div class="cyan darken-3" style="color: rgba(255, 255, 255, 0.901961);">#00838f cyan darken-3</div>
+                                    <div class="cyan darken-4" style="color: rgba(255, 255, 255, 0.901961);">#006064 cyan darken-4</div>
+                                    <div class="cyan accent-1">#84ffff cyan accent-1</div>
+                                    <div class="cyan accent-2">#18ffff cyan accent-2</div>
+                                    <div class="cyan accent-3">#00e5ff cyan accent-3</div>
+                                    <div class="cyan accent-4">#00b8d4 cyan accent-4</div>
+                                </div>
+                                <div class="col s12 m6 l4">
+                                    <div class="teal lighten-5">#e0f2f1 teal lighten-5</div>
+                                    <div class="teal lighten-4">#b2dfdb teal lighten-4</div>
+                                    <div class="teal lighten-3">#80cbc4 teal lighten-3</div>
+                                    <div class="teal lighten-2">#4db6ac teal lighten-2</div>
+                                    <div class="teal lighten-1">#26a69a teal lighten-1</div>
+                                    <div class="teal">#009688 teal</div>
+                                    <div class="teal darken-1" style="color: rgba(255, 255, 255, 0.901961);">#00897b teal darken-1</div>
+                                    <div class="teal darken-2" style="color: rgba(255, 255, 255, 0.901961);">#00796b teal darken-2</div>
+                                    <div class="teal darken-3" style="color: rgba(255, 255, 255, 0.901961);">#00695c teal darken-3</div>
+                                    <div class="teal darken-4" style="color: rgba(255, 255, 255, 0.901961);">#004d40 teal darken-4</div>
+                                    <div class="teal accent-1">#a7ffeb teal accent-1</div>
+                                    <div class="teal accent-2">#64ffda teal accent-2</div>
+                                    <div class="teal accent-3">#1de9b6 teal accent-3</div>
+                                    <div class="teal accent-4">#00bfa5 teal accent-4</div>
+                                </div>
+                                <div class="col s12 m6 l4">
+                                    <div class="green lighten-5">#e8f5e9 green lighten-5</div>
+                                    <div class="green lighten-4">#c8e6c9 green lighten-4</div>
+                                    <div class="green lighten-3">#a5d6a7 green lighten-3</div>
+                                    <div class="green lighten-2">#81c784 green lighten-2</div>
+                                    <div class="green lighten-1">#66bb6a green lighten-1</div>
+                                    <div class="green">#4caf50 green</div>
+                                    <div class="green darken-1" style="color: rgba(255, 255, 255, 0.901961);">#43a047 green darken-1</div>
+                                    <div class="green darken-2" style="color: rgba(255, 255, 255, 0.901961);">#388e3c green darken-2</div>
+                                    <div class="green darken-3" style="color: rgba(255, 255, 255, 0.901961);">#2e7d32 green darken-3</div>
+                                    <div class="green darken-4" style="color: rgba(255, 255, 255, 0.901961);">#1b5e20 green darken-4</div>
+                                    <div class="green accent-1">#b9f6ca green accent-1</div>
+                                    <div class="green accent-2">#69f0ae green accent-2</div>
+                                    <div class="green accent-3">#00e676 green accent-3</div>
+                                    <div class="green accent-4">#00c853 green accent-4</div>
+                                </div>
+                                <div class="col s12 m6 l4">
+                                    <div class="light-green lighten-5">#f1f8e9 light-green lighten-5</div>
+                                    <div class="light-green lighten-4">#dcedc8 light-green lighten-4</div>
+                                    <div class="light-green lighten-3">#c5e1a5 light-green lighten-3</div>
+                                    <div class="light-green lighten-2">#aed581 light-green lighten-2</div>
+                                    <div class="light-green lighten-1">#9ccc65 light-green lighten-1</div>
+                                    <div class="light-green">#8bc34a light-green</div>
+                                    <div class="light-green darken-1" style="color: rgba(255, 255, 255, 0.901961);">#7cb342 light-green darken-1</div>
+                                    <div class="light-green darken-2" style="color: rgba(255, 255, 255, 0.901961);">#689f38 light-green darken-2</div>
+                                    <div class="light-green darken-3" style="color: rgba(255, 255, 255, 0.901961);">#558b2f light-green darken-3</div>
+                                    <div class="light-green darken-4" style="color: rgba(255, 255, 255, 0.901961);">#33691e light-green darken-4</div>
+                                    <div class="light-green accent-1">#ccff90 light-green accent-1</div>
+                                    <div class="light-green accent-2">#b2ff59 light-green accent-2</div>
+                                    <div class="light-green accent-3">#76ff03 light-green accent-3</div>
+                                    <div class="light-green accent-4">#64dd17 light-green accent-4</div>
+                                </div>
+                                <div class="col s12 m6 l4">
+                                    <div class="lime lighten-5">#f9fbe7 lime lighten-5</div>
+                                    <div class="lime lighten-4">#f0f4c3 lime lighten-4</div>
+                                    <div class="lime lighten-3">#e6ee9c lime lighten-3</div>
+                                    <div class="lime lighten-2">#dce775 lime lighten-2</div>
+                                    <div class="lime lighten-1">#d4e157 lime lighten-1</div>
+                                    <div class="lime">#cddc39 lime</div>
+                                    <div class="lime darken-1" style="color: rgba(255, 255, 255, 0.901961);">#c0ca33 lime darken-1</div>
+                                    <div class="lime darken-2" style="color: rgba(255, 255, 255, 0.901961);">#afb42b lime darken-2</div>
+                                    <div class="lime darken-3" style="color: rgba(255, 255, 255, 0.901961);">#9e9d24 lime darken-3</div>
+                                    <div class="lime darken-4" style="color: rgba(255, 255, 255, 0.901961);">#827717 lime darken-4</div>
+                                    <div class="lime accent-1">#f4ff81 lime accent-1</div>
+                                    <div class="lime accent-2">#eeff41 lime accent-2</div>
+                                    <div class="lime accent-3">#c6ff00 lime accent-3</div>
+                                    <div class="lime accent-4">#aeea00 lime accent-4</div>
+                                </div>
+                                <div class="col s12 m6 l4">
+                                    <div class="yellow lighten-5">#fffde7 yellow lighten-5</div>
+                                    <div class="yellow lighten-4">#fff9c4 yellow lighten-4</div>
+                                    <div class="yellow lighten-3">#fff59d yellow lighten-3</div>
+                                    <div class="yellow lighten-2">#fff176 yellow lighten-2</div>
+                                    <div class="yellow lighten-1">#ffee58 yellow lighten-1</div>
+                                    <div class="yellow">#ffeb3b yellow</div>
+                                    <div class="yellow darken-1" style="color: rgba(255, 255, 255, 0.901961);">#fdd835 yellow darken-1</div>
+                                    <div class="yellow darken-2" style="color: rgba(255, 255, 255, 0.901961);">#fbc02d yellow darken-2</div>
+                                    <div class="yellow darken-3" style="color: rgba(255, 255, 255, 0.901961);">#f9a825 yellow darken-3</div>
+                                    <div class="yellow darken-4" style="color: rgba(255, 255, 255, 0.901961);">#f57f17 yellow darken-4</div>
+                                    <div class="yellow accent-1">#ffff8d yellow accent-1</div>
+                                    <div class="yellow accent-2">#ffff00 yellow accent-2</div>
+                                    <div class="yellow accent-3">#ffea00 yellow accent-3</div>
+                                    <div class="yellow accent-4">#ffd600 yellow accent-4</div>
+                                </div>
+                                <div class="col s12 m6 l4">
+                                    <div class="amber lighten-5">#fff8e1 amber lighten-5</div>
+                                    <div class="amber lighten-4">#ffecb3 amber lighten-4</div>
+                                    <div class="amber lighten-3">#ffe082 amber lighten-3</div>
+                                    <div class="amber lighten-2">#ffd54f amber lighten-2</div>
+                                    <div class="amber lighten-1">#ffca28 amber lighten-1</div>
+                                    <div class="amber">#ffc107 amber</div>
+                                    <div class="amber darken-1" style="color: rgba(255, 255, 255, 0.901961);">#ffb300 amber darken-1</div>
+                                    <div class="amber darken-2" style="color: rgba(255, 255, 255, 0.901961);">#ffa000 amber darken-2</div>
+                                    <div class="amber darken-3" style="color: rgba(255, 255, 255, 0.901961);">#ff8f00 amber darken-3</div>
+                                    <div class="amber darken-4" style="color: rgba(255, 255, 255, 0.901961);">#ff6f00 amber darken-4</div>
+                                    <div class="amber accent-1">#ffe57f amber accent-1</div>
+                                    <div class="amber accent-2">#ffd740 amber accent-2</div>
+                                    <div class="amber accent-3">#ffc400 amber accent-3</div>
+                                    <div class="amber accent-4">#ffab00 amber accent-4</div>
+                                </div>
+                                <div class="col s12 m6 l4">
+                                    <div class="orange lighten-5">#fff3e0 orange lighten-5</div>
+                                    <div class="orange lighten-4">#ffe0b2 orange lighten-4</div>
+                                    <div class="orange lighten-3">#ffcc80 orange lighten-3</div>
+                                    <div class="orange lighten-2">#ffb74d orange lighten-2</div>
+                                    <div class="orange lighten-1">#ffa726 orange lighten-1</div>
+                                    <div class="orange">#ff9800 orange</div>
+                                    <div class="orange darken-1" style="color: rgba(255, 255, 255, 0.901961);">#fb8c00 orange darken-1</div>
+                                    <div class="orange darken-2" style="color: rgba(255, 255, 255, 0.901961);">#f57c00 orange darken-2</div>
+                                    <div class="orange darken-3" style="color: rgba(255, 255, 255, 0.901961);">#ef6c00 orange darken-3</div>
+                                    <div class="orange darken-4" style="color: rgba(255, 255, 255, 0.901961);">#e65100 orange darken-4</div>
+                                    <div class="orange accent-1">#ffd180 orange accent-1</div>
+                                    <div class="orange accent-2">#ffab40 orange accent-2</div>
+                                    <div class="orange accent-3">#ff9100 orange accent-3</div>
+                                    <div class="orange accent-4">#ff6d00 orange accent-4</div>
+                                </div>
+                                <div class="col s12 m6 l4">
+                                    <div class="deep-orange lighten-5">#fbe9e7 deep-orange lighten-5</div>
+                                    <div class="deep-orange lighten-4">#ffccbc deep-orange lighten-4</div>
+                                    <div class="deep-orange lighten-3">#ffab91 deep-orange lighten-3</div>
+                                    <div class="deep-orange lighten-2">#ff8a65 deep-orange lighten-2</div>
+                                    <div class="deep-orange lighten-1">#ff7043 deep-orange lighten-1</div>
+                                    <div class="deep-orange">#ff5722 deep-orange</div>
+                                    <div class="deep-orange darken-1" style="color: rgba(255, 255, 255, 0.901961);">#f4511e deep-orange darken-1</div>
+                                    <div class="deep-orange darken-2" style="color: rgba(255, 255, 255, 0.901961);">#e64a19 deep-orange darken-2</div>
+                                    <div class="deep-orange darken-3" style="color: rgba(255, 255, 255, 0.901961);">#d84315 deep-orange darken-3</div>
+                                    <div class="deep-orange darken-4" style="color: rgba(255, 255, 255, 0.901961);">#bf360c deep-orange darken-4</div>
+                                    <div class="deep-orange accent-1">#ff9e80 deep-orange accent-1</div>
+                                    <div class="deep-orange accent-2">#ff6e40 deep-orange accent-2</div>
+                                    <div class="deep-orange accent-3">#ff3d00 deep-orange accent-3</div>
+                                    <div class="deep-orange accent-4">#dd2c00 deep-orange accent-4</div>
+                                </div>
+                                <div class="col s12 m6 l4">
+                                    <div class="brown lighten-5">#efebe9 brown lighten-5</div>
+                                    <div class="brown lighten-4">#d7ccc8 brown lighten-4</div>
+                                    <div class="brown lighten-3">#bcaaa4 brown lighten-3</div>
+                                    <div class="brown lighten-2">#a1887f brown lighten-2</div>
+                                    <div class="brown lighten-1">#8d6e63 brown lighten-1</div>
+                                    <div class="brown">#795548 brown</div>
+                                    <div class="brown darken-1" style="color: rgba(255, 255, 255, 0.901961);">#6d4c41 brown darken-1</div>
+                                    <div class="brown darken-2" style="color: rgba(255, 255, 255, 0.901961);">#5d4037 brown darken-2</div>
+                                    <div class="brown darken-3" style="color: rgba(255, 255, 255, 0.901961);">#4e342e brown darken-3</div>
+                                    <div class="brown darken-4" style="color: rgba(255, 255, 255, 0.901961);">#3e2723 brown darken-4</div>
+                                </div>
+                                <div class="col s12 m6 l4">
+                                    <div class="grey lighten-5">#fafafa grey lighten-5</div>
+                                    <div class="grey lighten-4">#f5f5f5 grey lighten-4</div>
+                                    <div class="grey lighten-3">#eeeeee grey lighten-3</div>
+                                    <div class="grey lighten-2">#e0e0e0 grey lighten-2</div>
+                                    <div class="grey lighten-1">#bdbdbd grey lighten-1</div>
+                                    <div class="grey">#9e9e9e grey</div>
+                                    <div class="grey darken-1" style="color: rgba(255, 255, 255, 0.901961);">#757575 grey darken-1</div>
+                                    <div class="grey darken-2" style="color: rgba(255, 255, 255, 0.901961);">#616161 grey darken-2</div>
+                                    <div class="grey darken-3" style="color: rgba(255, 255, 255, 0.901961);">#424242 grey darken-3</div>
+                                    <div class="grey darken-4" style="color: rgba(255, 255, 255, 0.901961);">#212121 grey darken-4</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+          </div>
+
+          <!-- helpers -->
+          <div class="divider"></div>
+          <div id="helpers" class="section scrollspy">
+            <h4 class="header">helpers</h4>
+            <div class="col s12 m8 l8">
+              <div id="text-align" class="section">
+                <h4 class="header">Text Align</h4>
+                <div class="row">
+                  <div class="col s12 m4 l3">
+                    <p>Right Aligned</p>
+                    <code class="language-markup">class="right-align"</code>
+                  </div>
+                  <div class="col s12 m8 l9">
+                    <div class="card-panel">
+                      <p class="right-align">This text is right aligned. Set in the year 0 F.E. ("Foundation Era"), The Psychohistorians opens on Trantor, the capital of the 12,000-year-old Galactic Empire. Though the empire appears stable and powerful, it is slowly decaying
+                        in ways that parallel the decline of the Western Roman Empire.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 m4 l3">
+                    <p>Left Aligned</p>
+                    <code class="language-markup">class="left-align"</code>
+                  </div>
+                  <div class="col s12 m8 l9">
+                    <div class="card-panel">
+                      <p class="left-align">In English and most European languages where words are read left-to-right, text is usually aligned "flush left", meaning that the text of a paragraph is aligned on the left-hand side with the right-hand side ragged. This is the
+                        default style of text alignment on the World Wide Web for left-to-right text Quotations are often indented.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 m4 l3">
+                    <p>Center Aligned</p>
+                    <code class="language-markup">class="center-align"</code>
+                  </div>
+                  <div class="col s12 m8 l9">
+                    <div class="card-panel">
+                      <p class="center-align">Text can also be "centered", or symmetrically aligned along an axis in the middle of a column. This is often used for the title of a work, headlines, and for poems and songs. As with flush-right alignment, centered text is often
+                        used to present data in tables. Centered text is considered less readable for a body of text made up of multiple lines because the ragged starting edges make it difficult for the reader to track from one line to the next.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 m4 l3">
+                    <h4 class="header">Vertical Align</h4>
+                    <p>You can easily vertically center things by adding the class <code class="language-markup">class="valign-wrapper"</code> to the container holding the items you want to vertically align.</p>
+                  </div>
+                  <div class="col s12 m8 l9">
+
+                    <div class="valign-demo valign-wrapper">
+                      <h5 class="valign center" style="width: 100%;">This should be vertically aligned</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="divider"></div>
+
+              <div id="hiding-content" class="section">
+                <h4 class="header">Hiding Content</h4>
+                <div class="row">
+                  <div class="col s12 m4 l3">
+                    <p>We provide easy to use classes to hide content on specific screen sizes.</p>
+                  </div>
+                  <div class="col s12 m8 l9">
+                    <div class="card-panel">
+                      <table class="striped">
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th>Screen Range</th>
+                            <th>Display Test</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><code class="language-markup">.hide-on-small-only</code>
+                            </td>
+                            <td>Hidden for Mobile Only</td>
+                            <td>
+                              <p class="hide-on-small-only">Check Me !</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><code class="language-markup">.hide-on-med-only</code>
+                            </td>
+                            <td>Hidden for Tablet Only</td>
+                            <td>
+                              <p class="hide-on-med-only">Check Me !</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><code class="language-markup">.hide-on-med-and-down</code>
+                            </td>
+                            <td>Hidden for Tablet and Below</td>
+                            <td>
+                              <p class="hide-on-med-and-down">Check Me !</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><code class="language-markup">.hide-on-med-and-up</code>
+                            </td>
+                            <td>Hidden for Tablet and Above</td>
+                            <td>
+                              <p class="hide-on-med-and-up">Check Me !</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><code class="language-markup">.hide-on-large-only</code>
+                            </td>
+                            <td>Hidden for Desktop Only</td>
+                            <td>
+                              <p class="hide-on-large-only">Check Me !</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="divider"></div>
+              <div id="truncation" class="section scrollspy">
+                <h4 class="header">Truncation</h4>
+                <div class="row">
+                  <div class="col s12 m4 l3">
+                    <p>To truncate long lines of text in an ellipsis, add the <code class="language-markup">class="truncate"</code> to the tag which contains the text. See an exaple below of a header being truncated inside a card.</p>
+                  </div>
+                  <div class="col s12 m8 l9">
+                    <div class="card-panel">
+                      <p>Normal: This is a paragraph. Paragraphs are preset with a font size, line height and spacing to match the overall vertical rhythm.</p>
+                      <p class="truncate">Truncate: This is a paragraph. Paragraphs are preset with a font size, line height and spacing to match the overall vertical rhythm.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Upgrading -->
+          <div class="divider"></div>
+          <div id="upgrading" class="section scrollspy">
+            <h4 class="header">Upgrading</h4>
+            <p>We love our customer, updates are going to be free of charge</p>
+            <p>We also made sure that update from one version to another is like a walk in the park, when an update is ready themeforest will send you an email to you registered envato account.</p>
+            <p class="header">Where to add your custom code for JS and CSS ?</p>
+            <p><strong>SASS/CSS: </strong> We have provided a custom SASS/CSS file to make your changes in this theme. <br/>If you are SASS expert you can write your custom SASS code in <code>demo/sass/custom/custom.scss</code> file and use <code>grunt watch</code> or <code>grunt build</code> Grunt command to see the changes. <br/> If you know the css only you can change directly change <code>demo/css/custom/custom.css</code> file.</p>
+            <p><strong>JS: </strong> We have also provided a custom JS file <code>js/custom-script.js</code> to make your changes in this theme.</p>
+            
+            <p class="header">How to Update ?</p>
+            <ol>
+            <li><p>Download the new updates from Themeforest,</p></li>
+            <li><p class="red-text">Before you start upgrading we recommending you to take backup of your all files or changes first and do not overwrite/replace your CSS <code>demo/css/custom/custom.css</code> & <code>demo/sass/custom/custom.scss</code>,  and JS changes <code>js/custom-script.js</code> </p></li>
+            <li><p>Now from the new updates from our side simply copy the "demo/js, demo/css,demo/sass, demo/fonts & demo/images" folder and replace it your project root folder, once you do that overwrite your custom SASS/CSS and JS files in to that.</p></li>
+            <li><p>Thats it! Your are now updated and ready to go.</p></li>
+            </ol>
+          </div>
+
+          <!-- Troubleshooting -->
+          <div class="divider"></div>
+          <div id="troubleshooting" class="section scrollspy">
+            <h4 class="header">Troubleshooting</h4>
+            <p>This section of the page describes how to trouble shoot Javascript errors that you may in counter.</p>
+            <p>JavaScript errors are likely to prevent a web page from working as expected. By default all browsers hide the JavaScript errors from the end user.</p>
+            <p>Fortunately there are <a href="http://javascript.info/tutorial/development" target="_blank">browser developer tools</a> to inspect and debug JavaScript errors.</p>
+          </div>
+
+          <!-- Support -->
+          <div class="divider"></div>
+          <div id="support" class="section scrollspy">
+            <h4 class="header">Support</h4>
+            <p>We highly recommending you to raise a support ticket on our support forum <a href="http://support.geekslabs.com/" target="_blank">http://support.geekslabs.com/</a> with detailed information with screenhots, you can also raise private information ticket to share secure link or credentials. You can also request for support via email or themeforest comments.</p>
+            <p>We also made sure that update from one version to another is like a walk in the park, when an update is ready themeforest will send you an email to you registered envato account.</p>            
+          </div>
+          
+
+          <!-- materializes & Credits -->
+          <div class="divider"></div>
+          <div id="credits" class="seaction scrollspy">
+            <h4 class="header">materializes & Credits</h4>
+            <p>We've used following materializes & credits</p>
+            <ul>
+            <li><a href="http://jquery.com/" rel="nofollow">jQuery</a></li>
+            <li><a href="http://materializecss.com/" rel="nofollow">materializecss</a></li>
+            <li><a href="http://d3js.org/" rel="nofollow">D3JS</a></li>
+            <li><a href="http://www.chartjs.org/" rel="nofollow">chartjs</a></li>
+            <li><a href="https://gionkunz.github.io/chartist-js/" rel="nofollow">chartist js</a></li>
+            <li><a href="http://morrisjs.github.io/morris.js/" rel="nofollow">morrisjs</a></li>
+            <li><a href="http://www.flotcharts.org/" rel="nofollow">flotcharts</a></li>
+            <li><a href="http://omnipotent.net/jquery.sparkline/" rel="nofollow">sparkline</a></li>
+            <li><a href="http://tenxer.github.io/xcharts/" rel="nofollow">xcharts</a></li>
+            <li><a href="http://jvectormap.com/" rel="nofollow">jvectormap</a></li>
+            <li><a href="http://fullcalendar.io/" rel="nofollow">fullcalendar</a></li>
+            <li><a href="https://www.datatables.net/" rel="nofollow">datatables</a></li>
+            <li><a href="http://noraesae.github.io/perfect-scrollbar/" rel="nofollow"></a>perfect scrollbar</li>
+            <li><a href="https://github.com/choffmeister/roboto-fontface-bower" rel="nofollow">Roboto font</a></li>
+            <li><a href="https://unsplash.com/" rel="nofollow">unsplash</a></li>
+          </ul>
+          </div>
+
+          </div>
+        </div>
+        <!--end container-->
+
+      </section>
+      <!-- END CONTENT -->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->      
+
+    </div>
+    <!-- END WRAPPER -->
+  </div>
+  <!-- END MAIN -->
+
+
+
+  <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- START FOOTER -->
+  <footer class="page-footer">
+    <div class="footer-copyright">
+      <div class="container">
+        <span>Copyright © 2015 <a class="grey-text text-lighten-4" href="http://themeforest.net/user/geekslabs/portfolio?ref=geekslabs" target="_blank">GeeksLabs</a> All rights reserved.</span>
+        <span class="right"> Design and Developed by <a class="grey-text text-lighten-4" href="http://geekslabs.com/">GeeksLabs</a></span>
+      </div>
+    </div>
+  </footer>
+  <!-- END FOOTER -->
+
+
+
+  <!-- ================================================
+    Scripts
+    ================================================ -->
+
+  <!-- jQuery Library -->
+  <script type="text/javascript" src="demo/js/plugins/jquery-1.11.2.min.js"></script>
+  <!-- jQuery UI -->
+  <script type="text/javascript" src="demo/js/plugins/jquery-ui.custom.js"></script>
+  <!--materialize js-->
+  <script type="text/javascript" src="demo/js/materialize.js"></script>
+  <!--prism-->
+  <script type="text/javascript" src="demo/js/plugins/prism/prism.js"></script>
+  <!-- chartist -->
+  <script type="text/javascript" src="demo/js/plugins/chartist-js/chartist.min.js"></script>
+  <!--jquery cookies-->
+  <script type="text/javascript" src="demo/js/plugins/jquery-cookies/jquery.cookies.min.js"></script>
+  <!--dynatree-->
+  <script type="text/javascript" src="demo/js/plugins/dynatree/jquery.dynatree.js"></script>
+  <!--scrollbar-->
+  <script type="text/javascript" src="demo/js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+  
+  <!--plugins.js - Some Specific JS codes for Plugin Settings-->
+  <script type="text/javascript" src="demo/js/plugins.js"></script>
+  
+  <script type="text/javascript">
+    $(function(){
+        $("#folder-structure-tree").dynatree({
+            persist: true,
+            children: [ // Pass an array of nodes.
+                {title: "demo", isFolder: true},
+                {title: "dist", isFolder: true},
+                {title: "getting_started", isFolder: true},
+                {title: "grunt", isFolder: true},
+                {title: "documentation.html"},
+            ]
+        });
+        $("#getting-started-folder-structure-tree").dynatree({
+            persist: true,
+            children: [ // Pass an array of nodes.
+                {title: "css", isFolder: true,
+                    children: [
+                        {title: "custom", isFolder: true,
+                            children: [
+                                {title: "custom-style.css"},
+                            ],
+                        },
+                        {title: "layouts", isFolder: true,
+                            children: [
+                                {title: "page-center.css"},
+                                {title: "style-fullscreen.css"},
+                                {title: "style-horizontal.css"},
+                            ],
+                        },
+                        {title: "plugins", isFolder: true,
+                            children: [
+                                {title: "media-hover-effects.css"},
+                            ],
+                        },
+                        {title: "materialize.css"},
+                        {title: "style.css"}
+                    ]
+                },
+                {title: "font", isFolder: true,
+                    children: [
+                        {title: "material-design-icons", isFolder: true},
+                        {title: "roboto", isFolder: true},
+                    ],
+                },
+                {title: "images", isFolder: true},
+                {title: "js", isFolder: true,
+                    children: [
+                        {title: "materialize-plugins", isFolder: true},
+                        {title: "plugins", isFolder: true,
+                            children: [
+                                {title: "angular-materialize.js"},
+                                {title: "...", isFolder: true},
+                            ],
+                        },
+                        {title: "materialize.js"},
+                        {title: "plugins.js"},
+                        {title: "custom-script.js"}                        
+                    ],
+                },
+                {title: "sass", isFolder: true,
+                    children: [
+                        {title: "components", isFolder: true},
+                        {title: "theme-components", isFolder: true},
+                        {title: "theme", isFolder: true},
+                        {title: "materialize.scss"},
+                        {title: "style.scss"}
+                    ],
+                },
+                {title: "index.html"}
+            ]
+        });
+
+      $("#grunt-structure-tree").dynatree({
+            persist: true,
+            children: [
+              {title: "grunt", isFolder: true,
+                children: [
+                  {title: "package.json"},
+                  {title: "gruntfile.js"},
+                ],
+              },
+            ]
+        });
+        
+    });
+    </script>
+
+
+</body>
+
+</html>
