@@ -1,0 +1,15 @@
+﻿{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "EntityFramework.Core": "7.0.0-rc1-final",
+    "EntityFramework.Relational": "7.0.0-rc1-final",
+    "NETStandard.Library": "1.6.0"
+  },
+
+  "frameworks": {
+    "netcoreapp1.0": {
+      "imports": "portable-net451+win8"
+    }
+  }
+}

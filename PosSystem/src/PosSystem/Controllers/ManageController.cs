@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using PosSystem.Data;
 using PosSystem.Models;
 using PosSystem.Models.ManageViewModels;
 using PosSystem.Services;

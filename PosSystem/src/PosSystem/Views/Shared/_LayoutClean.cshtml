@@ -1,0 +1,77 @@
+﻿@using System;
+<!DOCTYPE html>
+<html lang="en">
+
+<!--================================================================================
+    Item Name: Materialize - Material Design Admin Template
+    Version: 3.1
+    Author: GeeksLabs
+    Author URL: http://www.themeforest.net/user/geekslabs
+================================================================================ -->
+
+<head>
+    <base href="/">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="description" content="PosSystem es un systema de facturacion y punto de venta en la nube con modulos de: Facturacion, Inventario, Clientes, Compras, Bancos, Ingresos, Gastos ">
+    <meta name="keywords" content="Facturacion, Punto de venta, POS, Ventas, Clientes, Inventario, Compras, Gastos, Bancos, Contabilidad">
+    <title>Posystem - Facturacion y punto de venta online</title>
+
+    <!-- Favicons-->
+    <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+    <!-- Favicons-->
+    <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+    <!-- For iPhone -->
+    <meta name="msapplication-TileColor" content="#00bcd4">
+    <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+    <!-- For Windows Phone -->
+    <!-- CORE CSS-->
+    <link href="~/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="~/css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+    <link href="~/css/layouts/page-center.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <!-- Custome CSS-->
+    <link href="~/css/custom/custom.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+
+    <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
+    <link href="js/plugins/prism/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+    <link rel="stylesheet" href="~/css/site.css" />
+
+</head>
+
+<body class="cyan">
+    <!-- Start Page Loading -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- End Page Loading -->
+
+    @RenderBody()
+
+    <!-- ================================================
+      Scripts
+      ================================================ -->
+    <!-- jQuery Library -->
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <!--materialize js-->
+    <script type="text/javascript" src="~/js/materialize.js"></script>
+    <!--prism
+    <script type="text/javascript" src="js/prism/prism.js"></script>-->
+    <!--scrollbar-->
+    <script type="text/javascript" src="~/js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <!-- chartist -->
+
+    <!--plugins.js - Some Specific JS codes for Plugin Settings-->
+    <script type="text/javascript" src="~/js/plugins.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+
+</html>
